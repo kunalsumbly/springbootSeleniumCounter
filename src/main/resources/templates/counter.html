@@ -17,6 +17,11 @@
         <input id="increment-button" type="submit" value="Increment">
     </form>
 </div>
-
+<div>
+    <form action="#" th:action="@{/counter/reset}" method="POST" th:object="${resetForm}">
+        <input id="reset-value-field" type="number" th:field="*{value}">
+        <input id="reset-button" type="submit" value="Reset">
+    </form>
+</div>
 </body>
 </html>
