@@ -39,8 +39,10 @@ public class CounterController {
 		
 	}
 	
-	/*
-	 * @ModelAttribute("resetForm") public ResetForm initResetForm() { ResetForm
-	 * result = new ResetForm(); result.setValue(0); return result; }
-	 */
+	@ModelAttribute("resetForm")
+    public ResetForm initResetForm() {
+        ResetForm result = new ResetForm();
+        result.setValue(0);
+        return result;
+    }
 }
